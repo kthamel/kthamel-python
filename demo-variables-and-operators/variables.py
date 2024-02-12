@@ -16,3 +16,6 @@ print(var_integer_01 % var_integer_02) # Modulus operator - get the reminder aft
 print(var_integer_01 // var_integer_02) # Floor division operator - Get the floor value after deviding
 print(var_integer_01 ** var_integer_02) # Exponentiation operator- get the square value [10 into the power 2]
 
+var_integer_03 = 5
+print(str(var_integer_03) + " " + "Five") # str() can use to convert integer into String value
+
