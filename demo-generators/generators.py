@@ -35,3 +35,17 @@ print(get_output)
 
 ## This will print the last output after the calculation, until that its keeping in memory. ##
 ## It's not a good for large data set, to handle this issue can use generators ##
+
+def get_numbers(last_integer):
+    for i in range(0, last_integer):
+        if i % 2 == 1:
+            print("Odd Number", i)
+            yield i # Using yield, we can reduce the memory consumption. Because, its only storing the required value #
+                    # at once calling the function. Other than storing the whole data, till the end of manipulation.  #
+
+print("Starting")
+x = get_numbers(10)
+print("Finish")
+
+for i in x:
+    print("Looping", i)
