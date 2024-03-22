@@ -52,5 +52,14 @@ pipeline {
                 '''
             }
         }
+
+        stage('Demo Error Handling') {
+            steps {
+                sh '''
+                    python demo-error-handling/custom_exceptions.py
+                    python demo-error-handling/exceptions.py
+                '''
+            }
+        }
     }
 }
