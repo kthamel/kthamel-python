@@ -44,5 +44,13 @@ pipeline {
                 '''
             }
         }
+
+        stage('Demo Conditions') {
+            steps {
+                sh '''
+                    python demo-data-types/data-types.py
+                '''
+            }
+        }
     }
 }
