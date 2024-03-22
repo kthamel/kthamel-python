@@ -16,5 +16,13 @@ pipeline {
                 '''
             }
         }
+
+        stage('Demo Comprehension') {
+            steps {
+                sh '''
+                    python demo-comprehension/comprehension.py
+                '''
+            }
+        }
     }
 }
