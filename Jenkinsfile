@@ -33,7 +33,7 @@ pipeline {
             }
         }
 
-        stage('Demo Conditions') {
+        stage('Demo Data Structures') {
             steps {
                 sh '''
                     python demo-data-structures/dictionary.py
