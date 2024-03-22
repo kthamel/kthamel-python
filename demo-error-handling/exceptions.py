@@ -1,13 +1,13 @@
-from os import path
+# from os import path
 
-file_name = 'test_file.txt'
+# file_name = 'test_file.txt'
 
-if path.exists(file_name):              # In here checking the file is existing or non existing.                 
-    with open(file_name) as file:       # If existing it will print the lines of file.
-        print(file.readlines())
+# if path.exists(file_name):              # In here checking the file is existing or non existing.                 
+#     with open(file_name) as file:       # If existing it will print the lines of file.
+#         print(file.readlines())
 
-else:
-    print("File - " + file_name + " Not found") # If file is non existing, it will print this message.
+# else:
+#     print("File - " + file_name + " Not found") # If file is non existing, it will print this message.
 
 ## Try Catch logic ##
 
