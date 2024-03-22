@@ -16,13 +16,5 @@ pipeline {
                 '''
             }
         }
-
-        stage('Check Versions') {
-            steps {
-                sh '''
-                    python --version
-                '''
-            }
-        }
     }
 }
