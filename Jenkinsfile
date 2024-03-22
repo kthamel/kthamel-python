@@ -32,5 +32,17 @@ pipeline {
                 '''
             }
         }
+
+        stage('Demo Conditions') {
+            steps {
+                sh '''
+                    python demo-data-structures/dictionary.py
+                    python demo-data-structures/list.py
+                    python demo-data-structures/sets.py
+                    python demo-data-structures/slicing.py
+                    python demo-data-structures/tuple.py
+                '''
+            }
+        }
     }
 }
