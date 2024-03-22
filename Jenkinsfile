@@ -45,7 +45,7 @@ pipeline {
             }
         }
 
-        stage('Demo Conditions') {
+        stage('Demo Data Types') {
             steps {
                 sh '''
                     python demo-data-types/data-types.py
