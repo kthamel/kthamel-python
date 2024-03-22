@@ -24,5 +24,13 @@ pipeline {
                 '''
             }
         }
+
+        stage('Demo Conditions') {
+            steps {
+                sh '''
+                    python demo-conditions/conditional-statement.py
+                '''
+            }
+        }
     }
 }
